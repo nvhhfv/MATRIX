@@ -248,7 +248,275 @@ const NowhereDigitalWebsite = () => {
         </div>
       </section>
 
-      {/* Continue with remaining sections... */}
+      {/* Specialized Services */}
+      <section className="py-20 relative z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-5xl font-bold mb-6 font-mono">
+              <span className="text-matrix-green">
+                UAE_MARKET_SPECIALISTS
+              </span>
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {specializedServices.map((service, index) => {
+              const IconComponent = iconMap[service.icon];
+              return (
+                <Card
+                  key={service.id}
+                  className="bg-black/30 border-matrix-green/20 hover:border-matrix-green/40 transition-all duration-300 text-center group backdrop-blur-sm"
+                >
+                  <CardHeader>
+                    <div className="text-matrix-green mb-4 flex justify-center group-hover:scale-110 transition-transform duration-300">
+                      {IconComponent && <IconComponent className="w-8 h-8" />}
+                    </div>
+                    <CardTitle className="text-lg font-mono text-matrix-green">{service.title}</CardTitle>
+                    <CardDescription className="text-matrix-green/60 text-sm font-mono">{service.description}</CardDescription>
+                  </CardHeader>
+                </Card>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Tools & Technologies */}
+      <section className="py-20 relative z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-5xl font-bold mb-6 font-mono">
+              <span className="text-matrix-green">
+                CUTTING_EDGE_ARSENAL
+              </span>
+            </h2>
+            <p className="text-xl text-matrix-green/80 font-mono">LATEST_TECHNOLOGY_FOR_EXCEPTIONAL_RESULTS</p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+            {tools.map((tool, index) => (
+              <div
+                key={index}
+                className="bg-black/50 border border-matrix-green/20 hover:border-matrix-green/40 backdrop-blur-sm rounded-lg p-4 transition-all duration-300 text-center transform hover:scale-105 hover:bg-matrix-green/5"
+              >
+                <p className="text-sm font-medium text-matrix-green font-mono">{tool}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="py-20 relative z-10">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-5xl font-bold mb-6 font-mono">
+              <span className="text-matrix-green">
+                CLIENT_SUCCESS_PROTOCOLS
+              </span>
+            </h2>
+          </div>
+
+          <TerminalWindow title="TESTIMONIALS_DATABASE.log" className="relative">
+            <div className="text-center">
+              <div className="flex justify-center mb-4">
+                {[...Array(testimonials[currentTestimonial].rating)].map((_, i) => (
+                  <Star key={i} className="w-6 h-6 text-matrix-green fill-current" />
+                ))}
+              </div>
+              <blockquote className="text-xl text-matrix-green/80 mb-6 font-mono">
+                "&gt; {testimonials[currentTestimonial].text}"
+              </blockquote>
+              <div>
+                <p className="font-semibold text-matrix-green font-mono">{testimonials[currentTestimonial].name}</p>
+                <p className="text-matrix-green/60 font-mono">{testimonials[currentTestimonial].company}</p>
+              </div>
+            </div>
+          </TerminalWindow>
+
+          <div className="flex justify-center space-x-2 mt-8">
+            {testimonials.map((_, index) => (
+              <button
+                key={index}
+                className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                  index === currentTestimonial ? 'bg-matrix-green' : 'bg-matrix-green/30'
+                }`}
+                onClick={() => setCurrentTestimonial(index)}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-20 relative z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div>
+              <h2 className="text-4xl lg:text-5xl font-bold mb-6 font-mono">
+                <span className="text-matrix-green">
+                  READY_TO_JACK_IN
+                </span>
+                <br />
+                <span className="text-white">TO_THE_MATRIX?</span>
+              </h2>
+              
+              <TerminalWindow title="CONTACT_PROTOCOLS.exe" className="mb-8">
+                <p className="text-matrix-green/80 leading-relaxed font-mono">
+                  &gt; INITIATE_DIGITAL_TRANSFORMATION
+                  <br />
+                  &gt; COMPREHENSIVE_UAE_MARKET_SOLUTIONS
+                  <br />
+                  &gt; AI_POWERED_MULTILINGUAL_DOMINATION
+                </p>
+              </TerminalWindow>
+
+              <div className="space-y-6">
+                <div className="flex items-center space-x-4">
+                  <div className="bg-matrix-green/20 border border-matrix-green p-3 rounded-full">
+                    <Phone className="w-6 h-6 text-matrix-green" />
+                  </div>
+                  <div>
+                    <p className="text-matrix-green/60 font-mono">CALL_US</p>
+                    <p className="text-matrix-green font-semibold font-mono">{contactInfo.phone}</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-center space-x-4">
+                  <div className="bg-matrix-green/20 border border-matrix-green p-3 rounded-full">
+                    <Mail className="w-6 h-6 text-matrix-green" />
+                  </div>
+                  <div>
+                    <p className="text-matrix-green/60 font-mono">EMAIL_US</p>
+                    <p className="text-matrix-green font-semibold font-mono">{contactInfo.email}</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-center space-x-4">
+                  <div className="bg-matrix-green/20 border border-matrix-green p-3 rounded-full">
+                    <MapPin className="w-6 h-6 text-matrix-green" />
+                  </div>
+                  <div>
+                    <p className="text-matrix-green/60 font-mono">VISIT_US</p>
+                    <p className="text-matrix-green font-semibold font-mono">{contactInfo.address}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <TerminalWindow title="CONTACT_FORM.exe" className="h-fit">
+              <div className="space-y-6">
+                <div>
+                  <input
+                    type="text"
+                    placeholder="YOUR_NAME"
+                    className="w-full bg-black/50 border border-matrix-green/20 rounded-lg px-4 py-3 text-matrix-green placeholder-matrix-green/40 focus:border-matrix-green focus:outline-none transition-colors duration-300 font-mono"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="email"
+                    placeholder="YOUR_EMAIL"
+                    className="w-full bg-black/50 border border-matrix-green/20 rounded-lg px-4 py-3 text-matrix-green placeholder-matrix-green/40 focus:border-matrix-green focus:outline-none transition-colors duration-300 font-mono"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="tel"
+                    placeholder="YOUR_PHONE"
+                    className="w-full bg-black/50 border border-matrix-green/20 rounded-lg px-4 py-3 text-matrix-green placeholder-matrix-green/40 focus:border-matrix-green focus:outline-none transition-colors duration-300 font-mono"
+                  />
+                </div>
+                <div>
+                  <select className="w-full bg-black/50 border border-matrix-green/20 rounded-lg px-4 py-3 text-matrix-green focus:border-matrix-green focus:outline-none transition-colors duration-300 font-mono">
+                    <option value="">SELECT_SERVICE</option>
+                    <option value="social-media">SOCIAL_MEDIA_MARKETING</option>
+                    <option value="whatsapp">WHATSAPP_BUSINESS</option>
+                    <option value="seo">SEO_&_SEARCH_MARKETING</option>
+                    <option value="ai">AI_SOLUTIONS</option>
+                    <option value="ecommerce">E_COMMERCE_SOLUTIONS</option>
+                    <option value="other">OTHER</option>
+                  </select>
+                </div>
+                <div>
+                  <textarea
+                    placeholder="TELL_US_ABOUT_YOUR_PROJECT"
+                    rows={4}
+                    className="w-full bg-black/50 border border-matrix-green/20 rounded-lg px-4 py-3 text-matrix-green placeholder-matrix-green/40 focus:border-matrix-green focus:outline-none transition-colors duration-300 resize-none font-mono"
+                  ></textarea>
+                </div>
+                <Button
+                  type="button"
+                  onClick={handleContactSubmit}
+                  className="w-full bg-matrix-green text-black hover:bg-matrix-green/80 px-8 py-4 rounded-lg text-lg font-mono font-semibold transition-all duration-300 transform hover:scale-105"
+                >
+                  SEND_TRANSMISSION
+                </Button>
+              </div>
+            </TerminalWindow>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="py-12 border-t border-matrix-green/20 relative z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div className="col-span-2">
+              <div className="flex items-center space-x-2 mb-4">
+                <div className="w-10 h-10 bg-matrix-green/20 border border-matrix-green rounded-lg flex items-center justify-center">
+                  <Rocket className="w-6 h-6 text-matrix-green" />
+                </div>
+                <div>
+                  <h1 className="text-xl font-bold text-matrix-green font-mono">
+                    NOWHERE
+                  </h1>
+                  <p className="text-xs text-matrix-green/60 font-mono">DIGITAL_MATRIX</p>
+                </div>
+              </div>
+              <p className="text-matrix-green/60 mb-4 max-w-md font-mono">
+                LEADING_DIGITAL_MARKETING_AGENCY_IN_DUBAI_UAE - PIONEERING_THE_FUTURE_OF_DIGITAL_EXCELLENCE
+              </p>
+              <div className="flex space-x-4">
+                {[Globe, MessageCircle, Mail, Phone].map((Icon, index) => (
+                  <div
+                    key={index}
+                    className="w-10 h-10 bg-black border border-matrix-green/30 rounded-full flex items-center justify-center hover:bg-matrix-green/10 hover:border-matrix-green transition-colors duration-300 cursor-pointer"
+                  >
+                    <Icon className="w-5 h-5 text-matrix-green" />
+                  </div>
+                ))}
+              </div>
+            </div>
+            
+            <div>
+              <h3 className="text-lg font-semibold mb-4 font-mono text-matrix-green">SERVICES</h3>
+              <ul className="space-y-2 text-matrix-green/60 font-mono text-sm">
+                <li>SOCIAL_MEDIA_MARKETING</li>
+                <li>WHATSAPP_BUSINESS</li>
+                <li>SEO_&_SEARCH_MARKETING</li>
+                <li>AI_SOLUTIONS</li>
+                <li>E_COMMERCE</li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 className="text-lg font-semibold mb-4 font-mono text-matrix-green">COMPANY</h3>
+              <ul className="space-y-2 text-matrix-green/60 font-mono text-sm">
+                <li>ABOUT_US</li>
+                <li>OUR_TEAM</li>
+                <li>PORTFOLIO</li>
+                <li>CAREERS</li>
+                <li>CONTACT</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div className="border-t border-matrix-green/20 mt-8 pt-8 text-center text-matrix-green/60 font-mono">
+            <p>&copy; 2025 NOWHERE_DIGITAL_MATRIX. ALL_RIGHTS_RESERVED. | DUBAI_UAE</p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
