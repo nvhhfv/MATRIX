@@ -210,7 +210,7 @@ const NowhereDigitalWebsite = () => {
               </span>
             </h2>
             <p className="text-xl text-matrix-green/80 max-w-3xl mx-auto font-mono">
-              FROM_AI_AUTOMATION_TO_CULTURAL_MARKETING | UAE_MARKET_DOMINANCE
+              WEB_DEVELOPMENT | LEAD_GENERATION | AI_AGENTS | UAE_MARKET_DOMINANCE
             </p>
           </div>
 
