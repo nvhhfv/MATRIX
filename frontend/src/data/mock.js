@@ -84,6 +84,27 @@ export const services = [
     title: "Event Marketing",
     description: "Dubai Shopping Festival campaigns and virtual event management",
     features: ["DSF Campaigns", "Virtual Events", "Trade Shows", "Live Streaming"]
+  },
+  {
+    id: 13,
+    icon: "Smartphone",
+    title: "Web & App Development",
+    description: "Custom websites and mobile applications with cutting-edge technology",
+    features: ["React/NextJS Development", "Mobile App Development", "E-commerce Platforms", "Progressive Web Apps"]
+  },
+  {
+    id: 14,
+    icon: "Zap",
+    title: "Lead Generation Services",
+    description: "AI-powered lead generation and customer acquisition systems",
+    features: ["Lead Qualification", "CRM Integration", "Sales Funnel Optimization", "Conversion Tracking"]
+  },
+  {
+    id: 15,
+    icon: "Brain",
+    title: "AI Agents Integration",
+    description: "Custom AI agents and chatbots for business automation",
+    features: ["Custom AI Agents", "Chatbot Development", "Process Automation", "AI Customer Support"]
   }
 ];
 
