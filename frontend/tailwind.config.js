@@ -52,9 +52,54 @@ module.exports = {
   				'3': 'hsl(var(--chart-3))',
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
-  			}
+  			},
+  			// Matrix Theme Colors
+  			'matrix-green': '#00FF41',
+  			'matrix-bright-green': '#00FF00',
+  			'matrix-dark-green': '#003B00',
+  			'matrix-cyan': '#00FFFF',
+  			'matrix-blue': '#0077BE',
+  			'matrix-black': '#000000',
+  			'matrix-dark-grey': '#0D0208',
+  		},
+  		fontFamily: {
+  			'mono': ['JetBrains Mono', 'monospace'],
+  		},
+  		animation: {
+  			'matrix-glow': 'matrix-glow 2s ease-in-out infinite',
+  			'matrix-text-flow': 'matrix-text-flow 3s ease-in-out infinite',
+  			'matrix-loading': 'matrix-loading 1.5s ease-in-out infinite',
   		},
   		keyframes: {
+  			'matrix-glow': {
+  				'0%, 100%': {
+  					textShadow: '0 0 5px #00FF41'
+  				},
+  				'50%': {
+  					textShadow: '0 0 20px #00FF41, 0 0 30px #00FF41'
+  				}
+  			},
+  			'matrix-text-flow': {
+  				'0%': {
+  					transform: 'translateY(100%)',
+  					opacity: '0'
+  				},
+  				'50%': {
+  					opacity: '1'
+  				},
+  				'100%': {
+  					transform: 'translateY(-100%)',
+  					opacity: '0'
+  				}
+  			},
+  			'matrix-loading': {
+  				'0%, 100%': {
+  					opacity: '0.3'
+  				},
+  				'50%': {
+  					opacity: '1'
+  				}
+  			},
   			'accordion-down': {
   				from: {
   					height: '0'
@@ -72,9 +117,15 @@ module.exports = {
   				}
   			}
   		},
-  		animation: {
-  			'accordion-down': 'accordion-down 0.2s ease-out',
-  			'accordion-up': 'accordion-up 0.2s ease-out'
+  		backgroundImage: {
+  			'matrix-grid': 'linear-gradient(rgba(0, 255, 65, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 255, 65, 0.1) 1px, transparent 1px)',
+  		},
+  		backgroundSize: {
+  			'matrix-grid': '20px 20px',
+  		},
+  		boxShadow: {
+  			'matrix': '0 0 20px rgba(0, 255, 65, 0.3)',
+  			'matrix-lg': '0 0 30px rgba(0, 255, 65, 0.4)',
   		}
   	}
   },
