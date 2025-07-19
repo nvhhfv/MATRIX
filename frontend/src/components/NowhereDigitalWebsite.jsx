@@ -516,9 +516,9 @@ const NowhereDigitalWebsite = () => {
               <ul className="space-y-2 text-matrix-green/60 font-mono text-sm">
                 <li>SOCIAL_MEDIA_MARKETING</li>
                 <li>WHATSAPP_BUSINESS</li>
-                <li>SEO_&_SEARCH_MARKETING</li>
-                <li>AI_SOLUTIONS</li>
-                <li>E_COMMERCE</li>
+                <li>WEB_&_APP_DEVELOPMENT</li>
+                <li>AI_AGENTS_INTEGRATION</li>
+                <li>LEAD_GENERATION</li>
               </ul>
             </div>
             
