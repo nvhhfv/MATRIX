@@ -281,27 +281,49 @@ const NowhereDigitalWebsite = () => {
         </div>
       </section>
 
-      {/* Tools & Technologies */}
+      {/* Partner Brands */}
       <section className="py-20 relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold mb-6 font-mono">
               <span className="text-matrix-green">
-                CUTTING_EDGE_ARSENAL
+                TRUSTED_PARTNERS
               </span>
             </h2>
-            <p className="text-xl text-matrix-green/80 font-mono">LATEST_TECHNOLOGY_FOR_EXCEPTIONAL_RESULTS</p>
+            <p className="text-xl text-matrix-green/80 font-mono">STRATEGIC_ALLIANCES_FOR_DIGITAL_DOMINANCE</p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-            {tools.map((tool, index) => (
-              <div
-                key={index}
-                className="bg-black/50 border border-matrix-green/20 hover:border-matrix-green/40 backdrop-blur-sm rounded-lg p-4 transition-all duration-300 text-center transform hover:scale-105 hover:bg-matrix-green/5"
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {partnerBrands.map((brand, index) => (
+              <Card
+                key={brand.id}
+                className="bg-black/50 border border-matrix-green/20 hover:border-matrix-green/40 backdrop-blur-sm rounded-lg transition-all duration-300 text-center transform hover:scale-105 hover:bg-matrix-green/5 group"
               >
-                <p className="text-sm font-medium text-matrix-green font-mono">{tool}</p>
-              </div>
+                <CardHeader className="pb-2">
+                  <div className="text-4xl mb-2">{brand.logo}</div>
+                  <CardTitle className="text-matrix-green font-mono text-lg group-hover:text-white transition-colors duration-300">
+                    {brand.name}
+                  </CardTitle>
+                  <Badge variant="outline" className="border-matrix-green/40 text-matrix-green/70 font-mono text-xs">
+                    {brand.category}
+                  </Badge>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <p className="text-matrix-green/60 text-sm font-mono">{brand.description}</p>
+                </CardContent>
+              </Card>
             ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <TerminalWindow title="PARTNERSHIP_STATUS.log" className="max-w-2xl mx-auto">
+              <div className="font-mono text-matrix-green/80">
+                <p>&gt; STRATEGIC_PARTNERSHIPS: [ACTIVE]</p>
+                <p>&gt; INTEGRATION_LEVEL: [ENTERPRISE]</p>
+                <p>&gt; PARTNERSHIP_BENEFITS: [UNLIMITED_ACCESS]</p>
+                <p className="text-matrix-green mt-2">&gt; STATUS: READY_FOR_DEPLOYMENT</p>
+              </div>
+            </TerminalWindow>
           </div>
         </div>
       </section>
