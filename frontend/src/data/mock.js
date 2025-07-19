@@ -1,0 +1,145 @@
+// Mock data for NOWHERE Digital Marketing Agency
+
+export const services = [
+  {
+    id: 1,
+    icon: "Megaphone",
+    title: "Social Media Marketing",
+    description: "Instagram, TikTok, LinkedIn, YouTube - Complete social media management",
+    features: ["Content Creation", "Community Management", "Paid Advertising", "Analytics & Reporting"]
+  },
+  {
+    id: 2,
+    icon: "MessageCircle",
+    title: "WhatsApp Business Solutions",
+    description: "Essential for UAE market - Complete WhatsApp business integration",
+    features: ["API Setup", "Automated Chatbots", "Catalog Management", "Payment Integration"]
+  },
+  {
+    id: 3,
+    icon: "Globe",
+    title: "Multi-Language Marketing",
+    description: "Arabic, English, Hindi, Urdu content creation & cultural marketing",
+    features: ["Arabic Content", "Cultural Campaigns", "Ramadan Marketing", "Localization"]
+  },
+  {
+    id: 4,
+    icon: "Search",
+    title: "SEO & Search Marketing",
+    description: "Local SEO for Dubai & UAE with Arabic keyword optimization",
+    features: ["Local SEO", "Google Ads", "Voice Search", "Directory Optimization"]
+  },
+  {
+    id: 5,
+    icon: "Camera",
+    title: "Content Marketing",
+    description: "AI-powered content generation and visual storytelling",
+    features: ["Video Production", "Blog Writing", "Infographics", "AI Content"]
+  },
+  {
+    id: 6,
+    icon: "ShoppingBag",
+    title: "E-commerce Solutions",
+    description: "Complete e-commerce setup with UAE marketplace integration",
+    features: ["Instagram Shopping", "Noon.com Setup", "Payment Gateways", "CRO"]
+  },
+  {
+    id: 7,
+    icon: "Brain",
+    title: "AI Solutions",
+    description: "Cutting-edge AI chatbots with Arabic language support",
+    features: ["AI Chatbots", "Automation", "Predictive Analytics", "Personalization"]
+  },
+  {
+    id: 8,
+    icon: "BarChart3",
+    title: "Marketing Automation",
+    description: "Complete CRM implementation and lead nurturing systems",
+    features: ["HubSpot Setup", "Email Automation", "Lead Scoring", "Journey Mapping"]
+  },
+  {
+    id: 9,
+    icon: "Eye",
+    title: "AR/VR Marketing",
+    description: "Immersive experiences with AR try-ons and virtual showrooms",
+    features: ["AR Experiences", "Virtual Tours", "360° Photography", "VR Events"]
+  },
+  {
+    id: 10,
+    icon: "Shield",
+    title: "Web3 & Blockchain",
+    description: "Future-ready NFT campaigns and cryptocurrency integration",
+    features: ["NFT Marketing", "Crypto Payments", "Blockchain Loyalty", "Metaverse"]
+  },
+  {
+    id: 11,
+    icon: "Volume2",
+    title: "Voice & Audio Marketing",
+    description: "Podcast marketing and voice search optimization",
+    features: ["Podcast Strategy", "Voice SEO", "Audio Ads", "Voice Assistants"]
+  },
+  {
+    id: 12,
+    icon: "Calendar",
+    title: "Event Marketing",
+    description: "Dubai Shopping Festival campaigns and virtual event management",
+    features: ["DSF Campaigns", "Virtual Events", "Trade Shows", "Live Streaming"]
+  }
+];
+
+export const specializedServices = [
+  { id: 1, icon: "Plane", title: "Tourism & Hospitality", description: "Destination marketing for hotels and travel experiences" },
+  { id: 2, icon: "Building", title: "Real Estate Marketing", description: "Property listings and virtual tour experiences" },
+  { id: 3, icon: "Heart", title: "Healthcare Marketing", description: "Medical tourism and wellness brand promotion" },
+  { id: 4, icon: "Home", title: "Smart City Integration", description: "Dubai Smart City platform connections" }
+];
+
+export const testimonials = [
+  {
+    id: 1,
+    name: "Ahmed Al-Rashid",
+    company: "Dubai Luxury Hotels",
+    text: "NOWHERE Digital transformed our online presence completely. Our bookings increased by 300% during Ramadan season!",
+    rating: 5
+  },
+  {
+    id: 2,
+    name: "Sarah Johnson",
+    company: "UAE Fashion Brand",
+    text: "Their Arabic content creation and Instagram shopping setup boosted our sales beyond expectations. Truly exceptional service!",
+    rating: 5
+  },
+  {
+    id: 3,
+    name: "Omar Hassan",
+    company: "Tech Startup Dubai",
+    text: "The AI chatbot solution they built for us handles 80% of customer queries in both Arabic and English perfectly.",
+    rating: 5
+  }
+];
+
+export const stats = [
+  { number: "500+", label: "Projects Completed" },
+  { number: "150+", label: "Happy Clients" },
+  { number: "99%", label: "Success Rate" },
+  { number: "24/7", label: "Support" }
+];
+
+export const tools = [
+  "ChatGPT & Claude AI", "Adobe Creative Suite", "Google Analytics 4", "HubSpot CRM",
+  "Shopify Plus", "WhatsApp Business API", "Midjourney", "Hootsuite", "SEMrush", "Klaviyo"
+];
+
+export const navigationItems = [
+  { name: 'Home', href: '#home' },
+  { name: 'Services', href: '#services' },
+  { name: 'About', href: '#about' },
+  { name: 'Portfolio', href: '#portfolio' },
+  { name: 'Contact', href: '#contact' }
+];
+
+export const contactInfo = {
+  phone: "+971 50 XXX XXXX",
+  email: "hello@nowheredigital.ae",
+  address: "Dubai, United Arab Emirates"
+};
