@@ -146,9 +146,91 @@ export const stats = [
   { number: "24/7", label: "Support" }
 ];
 
-export const tools = [
-  "ChatGPT & Claude AI", "Adobe Creative Suite", "Google Analytics 4", "HubSpot CRM",
-  "Shopify Plus", "WhatsApp Business API", "Midjourney", "Hootsuite", "SEMrush", "Klaviyo"
+export const partnerBrands = [
+  {
+    id: 1,
+    name: "OpenAI",
+    logo: "🤖",
+    category: "AI Technology",
+    description: "Advanced AI models and GPT integration"
+  },
+  {
+    id: 2,
+    name: "Google Cloud",
+    logo: "☁️",
+    category: "Cloud Infrastructure",
+    description: "Scalable cloud computing solutions"
+  },
+  {
+    id: 3,
+    name: "Meta Business",
+    logo: "📱",
+    category: "Social Media",
+    description: "Facebook & Instagram advertising platform"
+  },
+  {
+    id: 4,
+    name: "HubSpot",
+    logo: "🎯",
+    category: "CRM & Marketing",
+    description: "Complete CRM and marketing automation"
+  },
+  {
+    id: 5,
+    name: "Shopify Plus",
+    logo: "🛒",
+    category: "E-commerce",
+    description: "Enterprise e-commerce solutions"
+  },
+  {
+    id: 6,
+    name: "Microsoft Azure",
+    logo: "💎",
+    category: "Cloud Services",
+    description: "Enterprise cloud computing platform"
+  },
+  {
+    id: 7,
+    name: "WhatsApp Business",
+    logo: "💬",
+    category: "Communication",
+    description: "Business messaging and automation"
+  },
+  {
+    id: 8,
+    name: "Stripe",
+    logo: "💳",
+    category: "Payments",
+    description: "Online payment processing solutions"
+  },
+  {
+    id: 9,
+    name: "AWS",
+    logo: "🌐",
+    category: "Cloud Infrastructure",
+    description: "Amazon Web Services cloud platform"
+  },
+  {
+    id: 10,
+    name: "Salesforce",
+    logo: "⚡",
+    category: "CRM Platform",
+    description: "World's leading CRM solution"
+  },
+  {
+    id: 11,
+    name: "Zapier",
+    logo: "🔗",
+    category: "Automation",
+    description: "Workflow automation and integration"
+  },
+  {
+    id: 12,
+    name: "Anthropic Claude",
+    logo: "🧠",
+    category: "AI Technology",
+    description: "Advanced AI assistant and language models"
+  }
 ];
 
 export const navigationItems = [
