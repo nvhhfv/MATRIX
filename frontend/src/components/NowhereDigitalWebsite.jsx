@@ -147,7 +147,9 @@ const NowhereDigitalWebsite = () => {
                 <p className="text-matrix-green/60 mt-2 text-sm">
                   &gt; Leading Digital Marketing Agency in Dubai, UAE
                   <br />
-                  &gt; Pioneering AI-powered multilingual solutions
+                  &gt; Custom Web & App Development Solutions
+                  <br />
+                  &gt; AI Agents Integration & Lead Generation
                   <br />
                   &gt; UAE market domination protocols active
                 </p>
